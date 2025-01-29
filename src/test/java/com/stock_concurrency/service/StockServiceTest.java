@@ -45,6 +45,8 @@ class StockServiceTest {
         Assertions.assertEquals(99,stock.getQuantity());
     }
 
+
+    // synchronized - 한개의 스레드만 접근이 가능
     @Test
     public void 동시에_100개의_요청이_들어온다() throws InterruptedException {
         int threadCount = 100;
@@ -79,4 +81,5 @@ class StockServiceTest {
         assertEquals(0,stock.getQuantity());
 
     }
+
 }
