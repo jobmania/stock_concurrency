@@ -14,7 +14,7 @@ public class StockService {
     }
 
 
-//    @Transactional
+    @Transactional
     public synchronized void decrease(Long id, Long quantity){
         // Stock 조회
 
